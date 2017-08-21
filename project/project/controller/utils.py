@@ -3,9 +3,8 @@ import requests
 import json
 import xmltodict
 
-API_ACCESS_KEY = os.getenv('3SCALE_API_ACCESS_KEY',
-                'c297628a2f3596c288bda279785d3811544105ce0c31c29812d601e0eb607965')
-API_URL = 'https://fabric8-analytics-test-admin.3scale.net'
+API_ACCESS_KEY = os.getenv('3SCALE_API_ACCESS_KEY', '<key>')
+API_URL = '<url>'
 
 def call_service(endpoint, data=None, method='post'):
     """ Posts data to 3scale's API and returns the response. Also,
